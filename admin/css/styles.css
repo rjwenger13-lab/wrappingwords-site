@@ -1,53 +1,76 @@
-/* Base reset */
+/* Reset (lightweight) */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* Base typography */
 body {
-  margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  background: #fafafa;
   color: #111;
-  line-height: 1.7;
+  background: #fff;
+  line-height: 1.65;
+  font-size: 18px;
 }
 
-/* Layout */
+/* Main content container */
 .container {
   max-width: 680px;
-  margin: 80px auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
 }
 
 /* Headings */
 h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5em;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.6rem;
-  margin-top: 2em;
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
-/* Text */
+/* Subtle meta text (dates, subtitles) */
+em,
+.subtitle {
+  display: block;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+/* Paragraphs */
 p {
-  margin-bottom: 1.4em;
+  margin-bottom: 1.5rem;
+}
+
+/* Lists */
+ul {
+  margin-left: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 /* Links */
 a {
   color: #111;
-  text-decoration: none;
-  border-bottom: 1px solid #ccc;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 a:hover {
-  border-bottom-color: #111;
+  opacity: 0.7;
 }
 
-/* Footer */
+/* Footer / back link */
 footer {
   margin-top: 4rem;
   font-size: 0.9rem;
-  color: #666;
 }
