@@ -9,7 +9,9 @@ html {
 
 body {
   margin: 0;
-  font-family: "Source Serif 4", serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 300; /* lighter for calmer feel */
+}
   color: #111;
   background: #fff;
   line-height: 1.6;
