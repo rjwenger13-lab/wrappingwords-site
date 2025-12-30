@@ -1,76 +1,61 @@
-/* ---------- Base Reset ---------- */
+/* RESET */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html {
+/* BASE */
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #ffffff;
+  color: #111;
+  line-height: 1.65;
   font-size: 18px;
 }
 
-body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  font-weight: 300; /* lighter for calmer feel */
-}
-  color: #111;
-  background: #fff;
-  line-height: 1.6;
-}
-
-/* ---------- Layout ---------- */
+/* LAYOUT */
 .container {
-  max-width: 640px;
-  margin: 5rem auto;
-  padding: 0 1.25rem;
+  max-width: 680px;
+  margin: 80px auto;
+  padding: 0 24px;
 }
 
-/* ---------- Headings ---------- */
-h1, h2, h3 {
-  font-weight: normal;
-  line-height: 1.25;
-  margin: 0 0 1.5rem 0;
-}
-
+/* TYPOGRAPHY */
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
 }
 
-/* ---------- Text ---------- */
 p {
-  margin: 0 0 1.25rem 0;
+  margin-bottom: 1.25rem;
 }
 
-em {
-  color: #555;
-  font-style: italic;
+/* META */
+.post-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 2rem;
 }
 
-/* ---------- Links ---------- */
+/* LINKS */
 a {
-  color: #111;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  color: #4f46e5;
+  text-decoration: none;
 }
 
 a:hover {
-  opacity: 0.6;
+  text-decoration: underline;
 }
 
-/* ---------- Lists ---------- */
-ul {
-  padding-left: 1.25rem;
-}
-
-li {
-  margin: 0.5rem 0;
-}
-
-/* ---------- Footer ---------- */
+/* FOOTER */
 footer {
-  margin-top: 3rem;
+  margin-top: 4rem;
   font-size: 0.9rem;
 }
